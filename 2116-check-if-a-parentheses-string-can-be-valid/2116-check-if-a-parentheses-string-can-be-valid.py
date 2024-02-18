@@ -2,6 +2,9 @@ class Solution:
     def canBeValid(self, s: str, locked: str) -> bool:
         if len(s)%2==1:
             return False
+        #Idea is to keep track of flip,closed,opened and 
+        # validate flip+open<close (forward traversal)
+        # validate flip+close<open (backward traversal)
         
         flip ,close,op = 0,0,0
         
