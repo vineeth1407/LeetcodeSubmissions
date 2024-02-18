@@ -11,7 +11,7 @@ class Solution:
             mid = (low+high)//2
             
             
-            if mid+1<len(nums) and nums[mid]>nums[mid+1]:
+            if nums[mid]>nums[mid+1]:
                 return nums[mid+1]
             
             if nums[mid]<nums[mid-1]:
