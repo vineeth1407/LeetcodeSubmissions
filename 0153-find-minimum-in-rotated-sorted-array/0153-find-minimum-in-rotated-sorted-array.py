@@ -17,7 +17,7 @@ class Solution:
             if nums[mid]<nums[mid-1]:
                 return nums[mid]
             
-            if nums[mid]>nums[0]:
+            if nums[mid]>nums[low]:
                 low= mid+1
             else:
                 high = mid-1
