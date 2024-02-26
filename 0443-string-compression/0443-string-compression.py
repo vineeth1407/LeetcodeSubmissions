@@ -1,8 +1,4 @@
-class Solution:
-    def add_count(self,count):
-        c = str(count)
-        return [i for i in c]
-       
+class Solution:      
     def compress(self, chars: List[str]) -> int:
         i = 0
         res = 0
